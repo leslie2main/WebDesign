@@ -1,69 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Grid Page</title>
+    <meta charset="UTF-8">
+    <title>Moneyball Grid</title>
+    <link rel="stylesheet" href="style/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-<style>
+        /* NAVIGATION */
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            background-color: #003366;
+            padding: 15px;
+        }
 
-/* NAVBAR */
-.nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  padding: 15px;
-  background-color: #002b5c;
-}
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
 
-.nav a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 18px;
-}
+        .nav a:hover {
+            text-decoration: underline;
+        }
 
-.nav a:hover {
-  text-decoration: underline;
-}
+        /* GRID LAYOUT */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
 
-/* GRID DEMO */
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  padding: 20px;
-  margin-top: 20px;
-}
+        .grid-item {
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            padding: 10px;
+        }
 
-.grid-item {
-  background-color: #ececec;
-  padding: 20px;
-  border-radius: 8px;
-  text-align: center;
-}
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
 
-</style>
+        .grid-item p {
+            font-size: 14px;
+            color: #333;
+            margin-top: 8px;
+        }
+
+        /* FOOTER */
+        footer.footer {
+            display: flex;
+            justify-content: space-between;
+            background-color: #eeeeee;
+            padding: 15px 20px;
+            margin-top: 40px;
+            border-radius: 6px;
+            flex-wrap: wrap;
+        }
+
+        footer.footer img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        footer.footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer.footer ul li {
+            margin-bottom: 6px;
+        }
+
+        /* RESPONSIVE GRID */
+        @media (max-width: 800px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
 
-<!-- NAV -->
-<div class="nav">
-  <a href="index.html">Home</a>
-  <a href="flexbox.html">Flexbox</a>
-  <a href="grid.html">Grid</a>
-  <a href="blog-post.html">Blog</a>
-</div>
+    <!-- NAVIGATION -->
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="flexbox.html">Flexbox</a>
+        <a href="grid.html">Grid</a>
+        <a href="favorites.html">Favorites</a>
+    </div>
 
-<h1>Grid Layout</h1>
+    <h1 style="text-align:center; margin-top:20px;">Moneyball Image Gallery</h1>
 
-<div class="grid-container">
-  <div class="grid-item">Grid Box 1</div>
-  <div class="grid-item">Grid Box 2</div>
-  <div class="grid-item">Grid Box 3</div>
-  <div class="grid-item">Grid Box 4</div>
-  <div class="grid-item">Grid Box 5</div>
-  <div class="grid-item">Grid Box 6</div>
-</div>
+    <!-- GRID CONTAINER -->
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="images/moneyball1.jpg" alt="Billy Beane reviewing stats">
+            <p>Billy Beane analyzing player statistics.</p>
+        </div>
+        <div class="grid-item">
+            <img src="images/moneyball2.jpg" alt="Team meeting">
+            <p>Team meeting to discuss new player strategies.</p>
+        </div>
+        <div class="grid-item">
+            <img src="images/moneyball3.jpg" alt="Moneyball draft">
+            <p>Scouting and drafting underrated players.</p>
+        </div>
+        <div class="grid-item">
+            <img src="images/moneyball4.jpg" alt="Game scene">
+            <p>The team putting strategy into action during a game.</p>
+        </div>
+        <div class="grid-item">
+            <img src="images/moneyball5.jpg" alt="Analytics board">
+            <p>Using analytics to improve team performance.</p>
+        </div>
+        <div class="grid-item">
+            <img src="images/moneyball6.jpg" alt="Coach giving instructions">
+            <p>Coach guiding players with tactical advice.</p>
+        </div>
+        <div class="grid-item">
+            <img src="images/moneyball7.jpg" alt="Team celebrating">
+            <p>Celebrating wins after strategic plays.</p>
+        </div>
+        <div class="grid-item">
+            <img src="images/moneyball8.jpg" alt="Stadium view">
+            <p>A packed stadium cheering on the team.</p>
+        </div>
+        <div class="grid-item">
+            <img src="images/moneyball9.jpg" alt="Team stats">
+            <p>Reviewing end-of-season team stats for future planning.</p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="social-icons">
+            <img src="images/XLogo.png" alt="X logo">
+            <img src="images/LogoInstagram.png" alt="Instagram logo">
+            <img src="images/LogoYouTube.png" alt="YouTube logo">
+            <img src="images/LinkedIn.png" alt="LinkedIn logo">
+        </div>
+
+        <ul class="use-cases">
+            <li>UI Design</li>
+            <li>UX Design</li>
+            <li>Wireframing</li>
+            <li>Brainstorming</li>
+        </ul>
+
+        <ul class="explore">
+            <li>Design</li>
+            <li>Prototyping</li>
+            <li>FigJam</li>
+            <li>Design Systems</li>
+        </ul>
+
+        <ul class="resources">
+            <li>Blog</li>
+            <li>Best Practices</li>
+            <li>Support</li>
+            <li>Resource Library</li>
+        </ul>
+    </footer>
 
 </body>
 </html>
+
