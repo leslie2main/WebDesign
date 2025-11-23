@@ -1,84 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Flexbox Page</title>
+    <meta charset="UTF-8">
+    <title>Flexbox Layout - Moneyball</title>
+    <link rel="stylesheet" href="style/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
 
-<style>
+        /* NAVIGATION */
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            background-color: #003366;
+            padding: 15px;
+            margin-bottom: 30px;
+        }
 
-/* NAVBAR */
-.nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  padding: 15px;
-  background-color: #002b5c;
-}
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
 
-.nav a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 18px;
-}
+        .nav a:hover {
+            text-decoration: underline;
+        }
 
-.nav a:hover {
-  text-decoration: underline;
-}
+        /* BLOG PREVIEW */
+        .blog-preview {
+            display: flex;
+            gap: 20px;
+            background-color: #f5f5f5;
+            padding: 15px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            align-items: center;
+        }
 
-/* FLEXBOX DEMO */
-.flex-container {
-  display: flex;
-  gap: 20px;
-  padding: 20px;
-  margin-top: 20px;
-}
+        .blog-preview img {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
 
-.flex-item {
-  background-color: #e8e8e8;
-  padding: 20px;
-  flex: 1;
-  border-radius: 8px;
-  text-align: center;
-}
+        .blog-text h2 {
+            margin: 5px 0;
+        }
 
-/* FOOTER (required for this assignment) */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f1f1f1;
-  padding: 15px 20px;
-  margin-top: 40px;
-  border-top: 2px solid #ccc;
-}
+        .blog-text p {
+            margin: 6px 0;
+        }
 
-</style>
+        .read-more {
+            color: #004aad;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+
+        /* FOOTER */
+        footer.footer {
+            display: flex;
+            justify-content: space-between;
+            background-color: #eeeeee;
+            padding: 15px 20px;
+            margin-top: 40px;
+            border-radius: 6px;
+            flex-wrap: wrap;
+        }
+
+        footer.footer img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        footer.footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer.footer ul li {
+            margin-bottom: 6px;
+        }
+    </style>
 </head>
 <body>
 
-<!-- NAV -->
-<div class="nav">
-  <a href="index.html">Home</a>
-  <a href="flexbox.html">Flexbox</a>
-  <a href="grid.html">Grid</a>
-  <a href="blog-post.html">Blog</a>
-</div>
+    <!-- NAVIGATION -->
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="flexbox.html">Flexbox</a>
+        <a href="grid.html">Grid</a>
+        <a href="blog-post.html">Blog</a>
+    </div>
 
-<h1>Flexbox Layout</h1>
+    <!-- BLOG PREVIEWS RELATED TO MONEYBALL -->
+    <div class="blog-preview">
+        <img src="images/moneyball-cover.jpg" alt="Moneyball movie poster">
+        <div class="blog-text">
+            <p class="date">October 30, 2025</p>
+            <h2 class="post-title">Organizing My Moneyball Homepage</h2>
+            <p class="post-preview">
+                Using Flexbox helped me structure the homepage for my Moneyball project.  
+                I was able to align the chapters and headings neatly while keeping everything responsive.
+            </p>
+            <a href="index.html" class="read-more">View Home</a>
+        </div>
+    </div>
 
-<div class="flex-container">
-  <div class="flex-item">Flex Item 1</div>
-  <div class="flex-item">Flex Item 2</div>
-  <div class="flex-item">Flex Item 3</div>
-</div>
+    <div class="blog-preview">
+        <img src="images/moneyball-stats.jpg" alt="Moneyball statistics">
+        <div class="blog-text">
+            <p class="date">November 1, 2025</p>
+            <h2 class="post-title">Adding Chapters and Background</h2>
+            <p class="post-preview">
+                Flexbox made it easier to keep my content aligned when I added multiple chapters about scenes and statistics.  
+                The background color choices also made the text more readable and consistent with the movie theme.
+            </p>
+            <a href="index.html" class="read-more">View Chapters</a>
+        </div>
+    </div>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <div>© 2025 Leslie</div>
-  <div>Moneyball Project</div>
-  <div>All Rights Reserved</div>
-</footer>
+    <div class="blog-preview">
+        <img src="images/moneyball-team.jpg" alt="Baseball team">
+        <div class="blog-text">
+            <p class="date">November 3, 2025</p>
+            <h2 class="post-title">Organizing Images and Visual Content</h2>
+            <p class="post-preview">
+                I struggled a bit with images at first, but using Flexbox let me create a clean, flexible layout  
+                for all the graphics and screenshots from Moneyball that I wanted to include.
+            </p>
+            <a href="index.html" class="read-more">View Gallery</a>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="social-icons">
+            <img src="images/XLogo.png" alt="X logo">
+            <img src="images/LogoInstagram.png" alt="Instagram logo">
+            <img src="images/LogoYouTube.png" alt="YouTube logo">
+            <img src="images/LinkedIn.png" alt="LinkedIn logo">
+        </div>
+
+        <ul class="use-cases">
+            <li>UI Design</li>
+            <li>UX Design</li>
+            <li>Wireframing</li>
+            <li>Brainstorming</li>
+        </ul>
+
+        <ul class="explore">
+            <li>Design</li>
+            <li>Prototyping</li>
+            <li>FigJam</li>
+            <li>Design Systems</li>
+        </ul>
+
+        <ul class="resources">
+            <li>Blog</li>
+            <li>Best Practices</li>
+            <li>Support</li>
+            <li>Resource Library</li>
+        </ul>
+    </footer>
 
 </body>
 </html>
