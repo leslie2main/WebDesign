@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout - Softball Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-primary text-white p-3">
+        <h1>Softball Flexbox Layouts</h1>
+        <nav>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="flexbox.html">Flexbox</a></li>
+                <li class="nav-item"><a class="nav-link" href="grid.html">Grid</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <h2>Using Flexbox for Drills</h2>
+        <div class="d-flex flex-wrap justify-content-around gap-3">
+            <div class="card p-3" style="width: 18rem;">
+                <img src="images/drill1.jpg" class="card-img-top" alt="Drill 1">
+                <div class="card-body">
+                    <h5 class="card-title">Infield Drill</h5>
+                    <p class="card-text">Improve reaction time and accuracy with this simple drill.</p>
+                </div>
+            </div>
+            <div class="card p-3" style="width: 18rem;">
+                <img src="images/drill2.jpg" class="card-img-top" alt="Drill 2">
+                <div class="card-body">
+                    <h5 class="card-title">Batting Practice</h5>
+                    <p class="card-text">Work on hitting consistency using soft toss or tee drills.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-3">
+        <p>&copy; 2025 Softball Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>
