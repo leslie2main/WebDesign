@@ -2,11 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta-name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid Layout - Softball Blog</title>
-    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .nav-link { color: white !important; }
+        .nav-link:hover { color: #ffeb3b !important; }
+        .nav-link.active {
+            color: white !important;
+            background-color: rgba(255, 255, 255, 0.25) !important;
+        }
+    </style>
 </head>
+
 <body>
     <header class="bg-primary text-white p-3">
         <h1>Softball Grid Layout</h1>
@@ -21,18 +33,20 @@
     </header>
 
     <main class="container my-5">
-        <h2>Practice Schedule Grid</h2>
-        <div class="grid-container">
-            <div class="grid-item bg-light p-3">Monday: Batting Practice</div>
-            <div class="grid-item bg-light p-3">Tuesday: Infield Drills</div>
-            <div class="grid-item bg-light p-3">Wednesday: Pitching Practice</div>
-            <div class="grid-item bg-light p-3">Thursday: Outfield Drills</div>
-            <div class="grid-item bg-light p-3">Friday: Team Scrimmage</div>
+        <h2>Weekly Practice Schedule</h2>
+
+        <div class="grid-container mt-4">
+            <div class="grid-item p-3 bg-light">Monday: Batting Practice</div>
+            <div class="grid-item p-3 bg-light">Tuesday: Infield Drills</div>
+            <div class="grid-item p-3 bg-light">Wednesday: Pitching</div>
+            <div class="grid-item p-3 bg-light">Thursday: Outfield Work</div>
+            <div class="grid-item p-3 bg-light">Friday: Scrimmage</div>
         </div>
     </main>
 
     <footer class="bg-dark text-white text-center p-3">
-        <p>&copy; 2025 Softball Blog. All rights reserved.</p>
+        &copy; 2025 Softball Blog
     </footer>
+
 </body>
 </html>
