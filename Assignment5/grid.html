@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid Layout</title>
+
+<link rel="stylesheet" href="style/style.css">
+
+<style>
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.grid-gallery img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* FEATURED GRID SECTION */
+.featured {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #e8f0ff;
+    padding: 20px;
+    gap: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.featured img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+    .featured {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Softball Site</a>
+  </div>
+</nav>
+
+<main class="container mt-4">
+
+    <h1>Softball Grid Gallery</h1>
+
+    <!-- Gallery -->
+    <div class="grid-gallery">
+        <img src="images/softball3.jpg" alt="Softball 1">
+        <img src="images/softball4.jpg" alt="Softball 2">
+        <img src="images/softball5.jpg" alt="Softball 3">
+        <img src="images/softball6.jpg" alt="Softball 4">
+    </div>
+
+    <!-- Featured Section (Requirement 5 Optional) -->
+    <section class="featured">
+        <div>
+            <h2>Featured Softball Team</h2>
+            <p>This team is known for its strong defense and fast-paced offensive strategy.</p>
+        </div>
+        <img src="images/softballTeam.jpg" alt="Featured Team">
+    </section>
+
+</main>
+
+</body>
+</html>
