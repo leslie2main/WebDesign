@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid Layout - Softball Blog</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -15,6 +15,14 @@
         .nav-link.active {
             color: white !important;
             background-color: rgba(255, 255, 255, 0.25) !important;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -36,11 +44,35 @@
         <h2>Weekly Practice Schedule</h2>
 
         <div class="grid-container mt-4">
-            <div class="grid-item p-3 bg-light">Monday: Batting Practice</div>
-            <div class="grid-item p-3 bg-light">Tuesday: Infield Drills</div>
-            <div class="grid-item p-3 bg-light">Wednesday: Pitching</div>
-            <div class="grid-item p-3 bg-light">Thursday: Outfield Work</div>
-            <div class="grid-item p-3 bg-light">Friday: Scrimmage</div>
+            <div class="grid-item p-3 bg-light">
+                <img src="images/softball4.jpg" alt="Batting practice">
+                <h4>Monday</h4>
+                <p>Batting practice focusing on form and contact.</p>
+            </div>
+
+            <div class="grid-item p-3 bg-light">
+                <img src="images/softball2.jpg" alt="Infield drills">
+                <h4>Tuesday</h4>
+                <p>Infield drills to improve ground ball fielding.</p>
+            </div>
+
+            <div class="grid-item p-3 bg-light">
+                <img src="images/softball5.jpg" alt="Pitching practice">
+                <h4>Wednesday</h4>
+                <p>Pitching and catching fundamentals.</p>
+            </div>
+
+            <div class="grid-item p-3 bg-light">
+                <img src="images/softball6.jpg" alt="Outfield drills">
+                <h4>Thursday</h4>
+                <p>Outfield drills focusing on tracking fly balls.</p>
+            </div>
+
+            <div class="grid-item p-3 bg-light">
+                <img src="images/softball7.jpg" alt="Team scrimmage">
+                <h4>Friday</h4>
+                <p>Team scrimmage to apply skills in game situations.</p>
+            </div>
         </div>
     </main>
 
